@@ -1,0 +1,260 @@
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+
+}
+
+a{
+    text-decoration: none;
+
+}
+
+body{
+    font-family: sans-serif;
+    background-color: black;
+}
+
+nav{
+    max-width: 150px;
+    margin: auto;
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2rem;
+    font-size: 30px;
+}
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.link a{
+    position: relative;
+    padding-bottom: 0.75rem;
+    color: #fff;
+}
+
+.link a::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    background-color: blue;
+    transition: all 0.3s ease;
+}
+
+.link a:hover::after{
+    width: 70%;
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 5rem  2rem;
+}
+
+.blur{
+    position: absolute;
+    box-shadow: 0 0 1000px 50px blue;
+    z-index: -100;
+}
+
+header{
+    position: relative;
+    padding-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+
+header h1{
+    color: rgb(240, 119, 20);
+}
+
+header.content h1 span{
+    columns: white;
+    margin-bottom: 50px;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 4rem;
+}
+
+header .content h1 span{
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px white;
+
+}
+
+header .content p{
+    margin-bottom: 2rem;
+    color: white;
+}
+
+
+header .image img{
+    max-width: 600px;
+    margin-left: 200px;
+    
+}
+
+.btn{
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    color: white;
+    background-color: blue;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn:hover{
+    background-color: blue;
+}
+
+section .header{
+    margin-bottom: 1rem;
+    color: white;
+    text-align: center;
+    font-size: 2.25rem;
+    font-weight: 600;
+}
+
+.features{
+    margin-top: 4rem;
+    display: flex;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+    padding: 25px;
+    justify-content: flex-start;
+}
+
+.features .card{
+    background-color: rgb(228, 130, 130);
+    padding: 1rem;
+    border: 5px solid transparent;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    justify-content: space-evenly;
+}
+
+.features .card:hover{
+    background-color: rgb(17, 16, 16);
+    border-color: pink;
+
+}
+
+.features .card span{
+    display: inline-block;
+    background-color: blue;
+    padding: 5px 9px;
+    margin-bottom: 1rem;
+    font-size: 1.75rem;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.features .card h2{
+    margin-bottom: 0.5em;
+    color: #a30909;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.features .card p{
+    color: #fff;
+    margin-bottom: 1rem;
+
+}
+
+.features .card a{
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.features .card a:hover{
+    color: blue;
+}
+
+section .header{
+    margin-bottom: 1rem;
+    color: white;
+    text-align: center;
+    font-size: 2.25rem;
+    font-weight: 600;
+}
+
+.sub{
+    margin-top: 4rem;
+    display: flex;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+    padding: 25px;
+    justify-content: flex-start;
+}
+
+.sub .prime{
+    background-color: rgb(228, 97, 97);
+    padding: 1rem;
+    border: 5px solid transparent;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    justify-content: space-evenly;
+}
+
+.sub .prime:hover{
+    background-color: black;
+    border-color: #fff;
+
+}
+
+
+.sub .prime h2{
+    margin-bottom: 0.5em;
+    color: #a30909;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.sub .prime p{
+    color: #fff;
+    margin-bottom: 1rem;
+
+}
+
+.contact{
+    min-height: 5vh;
+    background-color: black;
+    padding: 50px;
+    text-align: center;
+}
+
+.conatiner{
+    max-width: 800px;
+    margin: auto;
+}
+
+.contact-info{
+    text-align: left;
+
+}
+
+.contact-info h3{
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: chartreuse;
+}
+
+.contact-info p{
+    margin-bottom: 10px;
+    color: purple;
+}
